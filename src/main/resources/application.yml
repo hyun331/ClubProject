@@ -1,0 +1,62 @@
+
+spring:
+  datasource:
+    url: jdbc:sqlite:club.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    generate-ddl: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
+
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sus03319@skuniv.ac.kr
+    password: nxbl ikej rfyj arph
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+#aws 연동
+cloud:
+  aws:
+    s3:
+      bucket: club-s3-bucket
+    credentials:
+      access-key: AKIATQGI7YZSWIFKV4W3
+      secret-key: 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
+    region:
+      static: ap-northeast-2
+      auto: false
+    stack:
+      auto: false
+
+#logging:
+#  config: classpath:log4j2.xml
+
+
+logging:
+  level:
+    root: warn
+  pattern:
+    file: "%d [%t] %-5p %c - %m%n"
+  file:
+    name: /home/ec2-user/temp/log/error.log
+  config: classpath:log4j2.xml
+
+

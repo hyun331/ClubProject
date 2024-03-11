@@ -1,0 +1,257 @@
+2023-12-12 14:19:27,362 [INFO ] [background-preinit] o.h.v.i.u.Version: HV000001: Hibernate Validator 8.0.1.Final
+2023-12-12 14:19:27,384 [INFO ] [restartedMain] o.s.b.StartupInfoLogger: Starting ClubProjectApplication using Java 17.0.8.1 with PID 9716 (C:\club_project\ClubProject\target\classes started by 북205_11 in C:\club_project\ClubProject)
+2023-12-12 14:19:27,387 [INFO ] [restartedMain] o.s.b.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-12-12 14:19:28,212 [INFO ] [restartedMain] o.a.j.l.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-12 14:19:28,213 [INFO ] [restartedMain] o.a.j.l.DirectJDKLog: Starting service [Tomcat]
+2023-12-12 14:19:28,213 [INFO ] [restartedMain] o.a.j.l.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-12-12 14:19:28,351 [INFO ] [restartedMain] o.a.j.l.DirectJDKLog: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-12-12 14:19:28,356 [INFO ] [restartedMain] o.a.j.l.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-12-12 14:19:28,440 [INFO ] [restartedMain] o.h.j.i.u.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12 14:19:28,468 [INFO ] [restartedMain] o.h.Version: HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-12-12 14:19:28,470 [INFO ] [restartedMain] o.h.c.Environment: HHH000406: Using bytecode reflection optimizer
+2023-12-12 14:19:28,616 [INFO ] [restartedMain] c.z.h.HikariDataSource: HikariPool-1 - Starting...
+2023-12-12 14:19:28,702 [INFO ] [restartedMain] c.z.h.p.HikariPool: HikariPool-1 - Added connection org.sqlite.SQLiteConnection@3c57b6fa
+2023-12-12 14:19:28,703 [INFO ] [restartedMain] c.z.h.HikariDataSource: HikariPool-1 - Start completed.
+2023-12-12 14:19:29,224 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12 14:19:30,182 [INFO ] [restartedMain] o.a.j.l.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2023-12-12 14:19:30,202 [INFO ] [restartedMain] o.s.b.StartupInfoLogger: Started ClubProjectApplication in 3.032 seconds (process running for 3.753)
+2023-12-12 14:19:34,154 [INFO ] [http-nio-8080-exec-1] o.a.j.l.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-12 14:19:34,202 [INFO ] [http-nio-8080-exec-1] c.s.c.c.HomeController: testing
+2023-12-12 14:19:34,836 [ERROR] [http-nio-8080-exec-1] o.a.j.l.DirectJDKLog: Servlet.service() for servlet [jsp] threw exception
+java.lang.NullPointerException: Cannot invoke "com.sku.clubproject.model.UserDTO.getIsCommittee()" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+	at org.apache.jsp.WEB_002dINF.views.home.home_jsp._jspService(home_jsp.java:287)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-12 14:19:34,838 [ERROR] [http-nio-8080-exec-1] o.a.j.l.DirectJDKLog: Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [An exception occurred processing [/WEB-INF/views/home/../format/header.jsp] at line [101]
+
+98:         <ul class="d-flex align-items-center">
+99: 
+100: 
+101:             <% if(((UserDTO)session.getAttribute("logIn")).getIsCommittee() == 1){%>
+102:             <li class="nav-item dropdown">
+103:                 <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+104:                     모드 선택
+
+
+Stacktrace:] with root cause
+java.lang.NullPointerException: Cannot invoke "com.sku.clubproject.model.UserDTO.getIsCommittee()" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+	at org.apache.jsp.WEB_002dINF.views.home.home_jsp._jspService(home_jsp.java:287)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-12 14:19:38,499 [INFO ] [http-nio-8080-exec-6] c.s.c.c.HomeController: testing
+2023-12-12 14:33:46,326 [INFO ] [SpringApplicationShutdownHook] c.z.h.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-12-12 14:33:46,327 [INFO ] [SpringApplicationShutdownHook] c.z.h.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-12-12 14:33:48,125 [INFO ] [background-preinit] o.h.v.i.u.Version: HV000001: Hibernate Validator 8.0.1.Final
+2023-12-12 14:33:48,147 [INFO ] [restartedMain] o.s.b.StartupInfoLogger: Starting ClubProjectApplication using Java 17.0.8.1 with PID 8944 (C:\club_project\ClubProject\target\classes started by 북205_11 in C:\club_project\ClubProject)
+2023-12-12 14:33:48,149 [INFO ] [restartedMain] o.s.b.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-12-12 14:33:48,933 [INFO ] [restartedMain] o.a.j.l.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-12 14:33:48,934 [INFO ] [restartedMain] o.a.j.l.DirectJDKLog: Starting service [Tomcat]
+2023-12-12 14:33:48,934 [INFO ] [restartedMain] o.a.j.l.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-12-12 14:33:49,075 [INFO ] [restartedMain] o.a.j.l.DirectJDKLog: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-12-12 14:33:49,080 [INFO ] [restartedMain] o.a.j.l.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-12-12 14:33:49,104 [WARN ] [restartedMain] o.a.j.l.DirectJDKLog: Cannot deserialize session attribute [joinClubList] for session [DA30A081B389CBF821284AE74FCECCD4]
+2023-12-12 14:33:49,167 [INFO ] [restartedMain] o.h.j.i.u.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12 14:33:49,195 [INFO ] [restartedMain] o.h.Version: HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-12-12 14:33:49,196 [INFO ] [restartedMain] o.h.c.Environment: HHH000406: Using bytecode reflection optimizer
+2023-12-12 14:33:49,340 [INFO ] [restartedMain] c.z.h.HikariDataSource: HikariPool-1 - Starting...
+2023-12-12 14:33:49,434 [INFO ] [restartedMain] c.z.h.p.HikariPool: HikariPool-1 - Added connection org.sqlite.SQLiteConnection@4b907c56
+2023-12-12 14:33:49,435 [INFO ] [restartedMain] c.z.h.HikariDataSource: HikariPool-1 - Start completed.
+2023-12-12 14:33:49,919 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12 14:33:50,862 [INFO ] [restartedMain] o.a.j.l.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2023-12-12 14:33:50,881 [INFO ] [restartedMain] o.s.b.StartupInfoLogger: Started ClubProjectApplication in 2.956 seconds (process running for 3.638)
+2023-12-12 14:34:00,676 [INFO ] [http-nio-8080-exec-1] o.a.j.l.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-12 14:34:08,669 [INFO ] [http-nio-8080-exec-8] c.s.c.c.HomeController: testing
+2023-12-12 14:35:19,197 [INFO ] [Thread-5] o.a.j.l.DirectJDKLog: Pausing ProtocolHandler ["http-nio-8080"]
+2023-12-12 14:35:19,199 [INFO ] [Thread-5] o.a.j.l.DirectJDKLog: Stopping service [Tomcat]
+2023-12-12 14:35:19,199 [INFO ] [Thread-5] o.a.j.l.DirectJDKLog: Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-12 14:35:19,200 [WARN ] [Thread-5] o.a.j.l.DirectJDKLog: Cannot serialize session attribute [joinClubList] for session [AC30CB8D2E4769F414BD88366F380C25]
+java.io.NotSerializableException: com.sku.clubproject.model.ClubDTO
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1187)
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:350)
+	at java.base/java.util.ArrayList.writeObject(ArrayList.java:866)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.io.ObjectStreamClass.invokeWriteObject(ObjectStreamClass.java:1070)
+	at java.base/java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1516)
+	at java.base/java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1438)
+	at java.base/java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1181)
+	at java.base/java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:350)
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1526)
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1000)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:307)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:259)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:374)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5089)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:496)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:969)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:498)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:273)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:331)
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.stop(WebServerStartStopLifecycle.java:53)
+	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:117)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:235)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:374)
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:207)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1076)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1035)
+	at org.springframework.boot.devtools.restart.Restarter.stop(Restarter.java:308)
+	at org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:250)
+	at org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:614)
+2023-12-12 14:35:19,202 [INFO ] [Thread-5] o.a.j.l.DirectJDKLog: Stopping ProtocolHandler ["http-nio-8080"]
+2023-12-12 14:35:19,203 [INFO ] [Thread-5] o.a.j.l.DirectJDKLog: Destroying ProtocolHandler ["http-nio-8080"]
+2023-12-12 14:35:19,205 [INFO ] [Thread-5] c.z.h.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-12-12 14:35:19,207 [INFO ] [Thread-5] c.z.h.HikariDataSource: HikariPool-1 - Shutdown completed.
