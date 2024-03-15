@@ -45,7 +45,9 @@ JDK 17 <br>
 <br>
 
 <h2>데이터베이스</h2>
-<p></p>
+
+![ERD 사진](https://github.com/hyun331/ClubProject/assets/162971981/91583272-c918-4ada-8f22-20ee9b685d93)
+
 <br>
 
 <h2>주요 기능</h2>
