@@ -1,6 +1,3 @@
-![시스템구성도사진](https://github.com/hyun331/ClubProject/assets/162971981/dc49ca92-0c8b-4b3f-91d9-fd40a076f3db)
-
-
 <h1>Developing on AWS</h1>
 <p>SW 전문 인재 양성 프로그램 팀 프로젝트</p>
 <br>
@@ -44,6 +41,8 @@ JDK 17 <br>
 <h2>시스템 구성도</h2>
 ![시스템구성도사진](https://github.com/hyun331/ClubProject/assets/162971981/dc49ca92-0c8b-4b3f-91d9-fd40a076f3db)
 <br>
+![시스템구성도사진](https://github.com/hyun331/ClubProject/assets/162971981/dc49ca92-0c8b-4b3f-91d9-fd40a076f3db)
+
 
 <h2>데이터베이스</h2>
 <p></p>
