@@ -52,10 +52,10 @@ JDK 17 <br>
 
 <table>
 <tr>
-	<th>사용자</th>
-	<th>기능</th>
-	<th>설명</th>
-	<th>비고</th>
+	<th width="15%">사용자</th>
+	<th width="20%">기능</th>
+	<th width="40%">설명</th>
+	<th width="25%">비고</th>
 </tr>
 
 
