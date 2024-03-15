@@ -49,7 +49,76 @@ JDK 17 <br>
 <br>
 
 <h2>주요 기능</h2>
-<p></p>
+
+<table>
+<tr>
+	<th>사용자</th>
+	<th>기능</th>
+	<th>설명</th>
+	<th>비고</th>
+</tr>
+
+
+<tbody>
+	<tr>
+		<td rowspan="3">공통</td>
+		<td>회원가입</td>
+		<td>회원가입시 학교 메일로 전송된 인증번호를 통해 가입합니다. 일반 회원은 user로 회원가입, 위원회인 경우 admin을 클릭한 뒤 관리자 코드를 입력합니다.</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>로그인</td>
+		<td>로그인</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>로그아웃</td>
+		<td>로그아웃</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td rowspan = "3">일반회원</td>
+		<td>동아리 지원</td>
+		<td>가입 희망하는 동아리를 지원한다.</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>동아리 개설</td>
+		<td>동아리 개설 신청한다.</td>
+		<td>위원회의 회의를 통해 결과가 이메일로 전송</td>
+	</tr>
+	<tr>
+		<td>동아리 게시물 열람</td>
+		<td>동아리 홍보 또는 동아리 활동 게시물을 열람한다.</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>동아리 부원</td>
+		<td>동아리 활동</td>
+		<td>동아리 게시물을 작성한다.</td>
+		<td>일반회원의 기능 사용 가능</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</tbody>
+
+</table>
 <br>
 
 <h2>화면</h2>
