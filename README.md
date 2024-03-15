@@ -39,7 +39,7 @@ JDK 17 <br>
 <br>
 
 <h2>시스템 구성도</h2>
-![시스템구성도사진](https://github.com/hyun331/ClubProject/assets/162971981/ebb22fc1-390e-4410-8c41-0d6b13c245e9)
+![시스템구성도사진](https://github.com/hyun331/ClubProject/assets/162971981/dc49ca92-0c8b-4b3f-91d9-fd40a076f3db.jpg)
 <br>
 
 <h2>데이터베이스</h2>
