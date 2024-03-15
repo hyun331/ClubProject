@@ -28,9 +28,11 @@
       	서버가 다운되는 경우를 빠른 확인을 위해 cloudWatch를 사용하여 일정 주기마다 Lambda함수를 호출하도록 스케쥴링했습니다. 
        	cloudWatch가 Lambda함수를 호출하는 시점에서 server가 죽어있으면 club server down이라는 메세지를 telegram에 전송하고, 살아있는 경우 club server 200이란 메세지를 전송합니다.
 	또한 사용자가 서비스를 사용하고 있는 도중 에러가 발생한 경우에도 발생 시각과 error status code를 telegram에 전송합니다.
-	
+ </p>
+ <br>
+ 
+ ![07 텔레그램](https://github.com/hyun331/ClubProject/assets/162971981/22d39b24-2b71-4fbd-aadb-3c47a4064d96)
 
-</p>
 <br>
 
 <h2>개발 기간</h2>
@@ -183,15 +185,21 @@ JDK 17 <br>
 <h2>화면</h2>
 
 ![로그인](https://github.com/hyun331/ClubProject/assets/162971981/107d5c39-2557-4144-92e3-7721e51cc16d)
-<br>
+ <hr/>
 <h5>현재 AWS 인스턴스를 삭제하여 AWS S3에 존재하는 이미지들이 보이지 않습니다.</h5>
 
 ![홈](https://github.com/hyun331/ClubProject/assets/162971981/cf654dd7-eae3-4c0b-9df7-b58ece1f5bd1)
+<hr/>
+	
 ![03일반회원](https://github.com/hyun331/ClubProject/assets/162971981/54775ea8-bd6c-4d07-85eb-d84f8160d913)
+ <hr/>
+
 ![04 동아리위원회](https://github.com/hyun331/ClubProject/assets/162971981/402a4d52-b867-485a-afae-4da9fad929b3)
+ <hr/>
+ 
 ![05 관리자](https://github.com/hyun331/ClubProject/assets/162971981/88987c1e-7685-4197-90f0-87888e254b00)
+ <hr/>
+ 
 ![06 관리자](https://github.com/hyun331/ClubProject/assets/162971981/79b47c0b-130f-40b8-98cd-41289fd2460c)
-![07 텔레그램](https://github.com/hyun331/ClubProject/assets/162971981/22d39b24-2b71-4fbd-aadb-3c47a4064d96)
-
-
-<br>
+ <hr/>
+ 
