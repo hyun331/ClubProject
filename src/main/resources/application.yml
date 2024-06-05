@@ -24,7 +24,7 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: sus03319@skuniv.ac.kr
-    password: nxbl ikej rfyj arph
+    password: 
     properties:
       mail:
         smtp:
